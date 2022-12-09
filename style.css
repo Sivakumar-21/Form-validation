@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    /* width: 100vh; */
+    height: 100vh;
+    padding: 100px 0;
+    background-color: lightblue;
+    
+}
+
+ .form-control input{
+    padding: 10px;
+    display: block;
+    text-align: center;
+    
+}
+.form-control input:focus{
+    outline: none;
+    border-color: rgb(167, 107, 202);
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+
+ i{
+    visibility: hidden;
+}
+.form-control.success i.fa-check{
+    visibility: visible;
+    color: green;
+    padding-bottom: 10px;
+}
+.form-control.error i.fa-exclamation{
+    visibility: visible;
+    color: red;
+    padding-bottom: 10px;
+}
+ small{
+    color: red;
+    position: absolute;
+    bottom: 0;
+    right: 25px;
+    top: 70px;
+}
+.form-control{
+    position: relative;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ button{
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #3f51b3;
+    color: white;
+}
+button:hover{
+    background: radial-gradient(#3951c7, transparent);
+}
+textarea{
+    display: block;
+    text-align: center;
+}
+.form-control.success textarea{
+    border-color: green;
+}
+.form-control.error textarea{
+    border-color: red;
+}
+.form-control textarea:focus{
+    outline: none;
+    border-color: rgb(167, 107, 202);
+}

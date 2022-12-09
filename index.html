@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script src="https://kit.fontawesome.com/8413be6fa2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h2>Account</h2>
+        </div>
+        <form class="form" id="form">
+            <div class="form-control">
+                <label for="#">Username</label>
+                <input type="text" placeholder="siva1234" id="username">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="#">Email id</label>
+                <input type="email" placeholder="sivakumar85260@gmail.com" id="email">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="#">Password</label>
+                <input type="password" placeholder="password" id="password">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="#">Confirm Password</label>
+                <input type="password" placeholder="confirmpassword" id="confirmpassword">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="#">Mobile number</label>
+                <input type="tel" id="phone" name="phone" placeholder="8220176526" pattern="^[0123456789]\d{9,9}$"  title="Please enter valid phone number">
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-exclamation"></i>
+                <small></small>
+            </div>
+            <div class="form-control">
+                <label for="#">Message</label>
+                <textarea name="message" id="textarea" cols="23" rows="5" placeholder="Enter your message"></textarea>
+                <i class="fa-solid fa-check"></i>
+                <i class="fa-solid fa-exclamation"></i>
+                <small></small>
+            </div>
+            <button>Submit</button>
+        </form>
+    </div>
+    <div class="result">Result</div>
+    <script src="script.js"></script> 
+</body>
+</html>
